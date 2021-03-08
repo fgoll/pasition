@@ -40,11 +40,11 @@
     var dom = document.querySelector("#dom");
     function animate() {
         pasition.animate({
-            from: 'M345.47,250L460.94,450L230,450Z',
+            from: 'M345.47,250L460.94,450Z',
             to: 'M345.47,250L460.94,450L230,450Z M460.94,50L576.41,250L345.47,250Z M576.41,250L691.88,450L460.94,450Z',
             time: 2000,
             progress: function (shapes) {
-              console.log(pasition.toSVGString(shapes))
+              // console.log(pasition.toSVGString(shapes))
                 dom.setAttribute("d", pasition.toSVGString(shapes));
             },
             end: function () {
