@@ -12,7 +12,7 @@ let licensePlugin =  license({
 })
 
 let config = {
-  entry: 'src/index.js',
+  entry: 'src/my.js',
   format:'umd',
   moduleName:'pasition',
   plugins: [
